@@ -1,0 +1,106 @@
+Table cases_malaysia {
+	date timestamp
+	cases_new int
+	cluster_import varchar
+	cluster_religious varchar
+	cluster_community varchar
+	cluster_highRisk varchar
+	cluster_education varchar
+	cluster_detentionCentre varchar
+	cluster_workplace varchar
+	}
+
+
+Table cases_state {
+	date timestamp
+	state varchar
+	cases_new int
+	}
+
+
+Table clusters {
+	cluster varchar
+	state varchar
+	district varchar
+	date_announced timestamp
+	date_last_onset timestamp
+	category varchar
+	status varchar
+	cases_new int
+	cases_total int
+	cases_active int
+	tests int
+	icu int
+	deaths int
+	recovered int
+	}
+
+Table deaths_malaysia  {
+	date timestamp
+	deaths_new int
+	}
+
+
+Table deaths_state {
+	date timestamp
+	state varchar
+	deaths_new int
+	}
+
+
+Table hospital {
+	date timestamp
+	state varchar
+	beds int
+	beds_noncrit int
+	admitted_pui int
+	admitted_covid int
+	admitted_total int
+	discharged_pui int
+	discharged_covid int
+	discharged_total int
+	hosp_covid int
+	hosp_pui int
+	hosp_noncovid int
+	}
+
+
+Table icu {
+	date timestamp
+	state varchar
+	bed_icu int
+	bed_icu_rep int
+	bed_icu_total int
+	bed_icu_covid int
+	vent int
+	vent_port int
+	icu_covid int
+	icu_pui int
+	icu_noncovid int
+	vent_covid int
+	vent_pui int
+	vent_noncovid int
+	}
+
+
+Table pkrc {
+	date timestamp
+	state varchar
+	beds int
+	admitted_pui int
+	admitted_covid int
+	admitted_total int
+	discharge_pui int
+	discharge_covid int
+	discharge_total int
+	pkrc_covid int
+	pkrc_pui int
+	pkrc_noncovid int
+	}
+
+
+Table tests_malaysia {
+	date timestamp
+	rtk-ag int
+	pcr int
+	}

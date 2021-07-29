@@ -1,0 +1,22 @@
+Table checkin_malaysia {
+	date timestamp 
+	checkins int 
+	unique_ind int 
+	unique_loc int
+	}
+
+
+Table checkin_state {
+	date timestamp 
+	state varchar
+	checkins int 
+	unique_ind int 
+	unique_loc int
+	}
+
+Table trace_malaysia {
+	date timestamp 
+	casual_contacts int 
+	hide_large int 
+	hide_small int
+	}

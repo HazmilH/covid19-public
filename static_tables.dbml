@@ -1,0 +1,7 @@
+Table population {
+	state varchar 
+	idxs int 
+	pop int 
+	pop_18 int 
+	pop_60 int 
+	}
